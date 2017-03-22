@@ -88,7 +88,7 @@ a:focus {
 .navbar-default .navbar-nav > li > a {
 	color: white;
 	font-weight: 700;
-	font-size: 12px;
+	font-size: 16px;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
@@ -183,7 +183,7 @@ a:focus {
 
 /* displayData Wrap */
 #displayData {
-	margin-top: 50px;
+	margin-top: 100px;
 	margin-bottom: 80px;
 }
 
@@ -199,15 +199,26 @@ a:focus {
 
 /* Footer */
 #footerwrap {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background: #384452;
+  background: #384452;
+	height: auto;
+	padding-bottom: 30px;
+	position: relative;
+	width: 100%;
+	border-bottom: 1px solid #CCCCCC;
+	border-top: 1px solid #DDDDDD;
+}
 
-  position:fixed;
-  margin-bottom:0px;
-  bottom:0px;
-  left:0px;
-  right:0px;
+#footerwrap ul {
+	font-size: 13px;
+	list-style-type: none;
+	margin-left: 0;
+	padding-left: 0;
+	margin-top: 15px;
+	color: #7F8C8D;
+}
+#footerwrap ul li a {
+	padding: 0 0 5px 0;
+	display: block;
 }
 
 #footerwrap p {

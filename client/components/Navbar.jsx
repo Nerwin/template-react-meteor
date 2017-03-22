@@ -10,29 +10,21 @@ export default class Navbar extends Component {
     }
 
     render() {
+        $(".navi li").on("click", function () {
+            $("li.active").removeClass("active");
+            $(this).addClass("active");
+        });
+
         return (
-            <div className="navbar navbar-default navbar-fixed-top" role="navigation">
-                <div className="container">
-                    <div className="navbar-header">
-                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span className="sr-only">Toggle navigation</span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                            <span className="icon-bar"></span>
-                        </button>
-                        <a className="navbar-brand" href="/">React-Meteor Boilerplate</a>
-                    </div>
-                    <div className="navbar-collapse collapse">
-                        <ul className="nav navbar-nav navbar-left">
-                            <li><a href="#"></a><i className="fa fa-home fa-1"> Home</i></li>
-                            <li><a href="#"></a><i className="fa fa-info-circle fa-1"> Présentation</i></li>
-                        </ul>
-                        <ul className="nav navbar-nav navbar-right">
-                            <li><a href="register"><i className="fa fa-user fa-1"> Sign Up</i></a></li>
-                            <li><a href="connection"><i className="fa fa-sign-in fa-1"> Login</i></a></li>
-                        </ul>
-                    </div>
-                </div>
+            <div className="ui-navbar">
+                <ul className="navi">
+                    <li className="active"><a href="/" ><i className="fa fa-home"></i><span>Home</span></a></li>
+                    <li><a href="section1" ><i className="fa fa-user"></i><span>Section1</span></a></li>
+                    <li><a href="section2" ><i className="fa fa-history"></i><span>Section2</span></a></li>
+                    <li><a href="Section3" ><i className="fa fa-line-chart"></i><span>Section3</span></a></li>
+                    <li><a href="connection" ><i className="fa fa-download"></i><span>Connection</span></a></li>
+                </ul>
+                <div className="clearfix"></div>
             </div>
         )
     }

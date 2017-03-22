@@ -6,8 +6,8 @@ import Footer from '/client/components/Footer.jsx';
 
 export const MainLayout = ({ container }) => (
     <div>
-        {/*<Navbar />*/}
+        <Navbar />
         {container()}
-        {/*<Footer />*/}
+        <Footer />
     </div>
 );
